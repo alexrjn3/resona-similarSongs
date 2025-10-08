@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #444;
+
+  .logo-container {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #eee;
+  }
+
+  .nav-links-container {
+    .nav-link {
+      text-decoration: none;
+      color: #eee;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.logo {
+  height: 150px;
+  width: 180px;
+}

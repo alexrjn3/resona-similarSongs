@@ -1,0 +1,180 @@
+.search-track-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  color: #eee;
+  font-family: "Roboto", sans-serif;
+
+  form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    input {
+      flex: 1;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #333;
+      background-color: #222;
+      color: #eee;
+      font-size: 1rem;
+
+      &:focus {
+        outline: none;
+        border-color: #179cc2;
+      }
+    }
+
+    button {
+      padding: 0 1rem;
+      background-color: #179cc2;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #179cc2;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .track-info,
+  .similar-tracks,
+  .artists {
+    margin-top: 1rem;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    h3,
+    h4 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: #179cc2;
+    }
+
+    img {
+      max-width: 50px;
+      max-height: 50px;
+      margin-right: 0.5rem;
+      border-radius: 6px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #222;
+        padding: 0.25rem 0.5rem;
+        border-radius: 6px;
+        transition: transform 0.2s ease;
+      }
+    }
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4rem;
+}
+
+ul li {
+  width: 96%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #222;
+  padding: 0.25rem 0.5rem;
+  padding-bottom: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.search-track-container-title {
+  text-align: center;
+  padding-top: 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+
+.track-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.track-info img {
+  margin-top: 2rem;
+  width: 70%;
+  align-self: center;
+}
+
+.artist-image {
+  width: 330px;
+  height: auto;
+}
+
+.search-results-container {
+  width: 35%;
+}
+
+.similar-track {
+  margin-top: 8rem;
+}
+
+.input-with-suggestions {
+  position: relative;
+
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 8px 12px;
+      cursor: pointer;
+      &:hover {
+        background: #f5f5f5;
+      }
+
+      .artist-name {
+        color: #777;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
